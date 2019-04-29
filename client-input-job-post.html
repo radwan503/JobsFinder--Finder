@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobs Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    </head>
+
+<body>
+    <!--===== top nav ====-->
+    <section class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ===== menu navbar ====-->
+    <section id="menu-navbar">
+        <div class="nav-bar">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#"><img src="image/../image/logo.png"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Tranning</a></li>
+                            <li><a href="#">Skill Test</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resource <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Career Guide</a></li>
+                                    <li><a href="#">Interview Tips</a></li>
+                                    <li><a href="#">Resume Tips</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">sign in</a></p>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-lg btlg-2" data-toggle="modal" data-target="#myModal"> create account</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    <!--menu navbar end-->
+    <!--  ======>Sign In id<=====-->
+    <section class="sign-in-id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" align="center"> <img class="img-circle" id="img_logo" src="image/logo.png" alt="image">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+                                </div>
+                                <!--  radio Button -->
+                                <div class="choice-login-18jan">
+                                    <label>
+                                        <input type="radio" name="gender" value="female"> Job Holder
+                                        <input type="radio" name="gender" value="other">Candidate </label>
+                                </div>
+                                <div id="div-forms">
+                                    <form id="login-form">
+                                        <div class="modal-body">
+                                            <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Login</button>
+                                            </div>
+                                            <div>
+                                                <button id="login_lost_btn" type="button" class="btn btn-link">Forget Password?</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="lost-form" style="display:none;">
+                                        <div class="modal-body">
+                                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required> </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Send</button>
+                                            </div>
+                                            <div>
+                                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======> create account option <=======-->
+    <section class="craeate-account-id">
+        <div class="container">
+            <div class="banner-inner text-center">
+                <div class="row">
+                    <!--  Craeate modal-->
+                    <div class="col-md-12">
+                        <div class="login-wrapper">
+                            <!-- Button trigger modal -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content model-content-feb5">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Create Your Account</h4> </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-secret" aria-hidden="true"></i>
+                                                        <h3>Job Seeker</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="registration.html">Create Account </a></h5> </div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                                        <h3>Job Holder</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="registration.html">Create Account </a></h5> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="client-post-header-bg">
+        <h2 class="text-center">Post Your Job</h2> </div>
+    <!--     client input -->
+    <section class="client-input">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="client-input-wrapper">
+                    <form action="">
+                        <!-- JOb Type field-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size">Enter Your Job Type</label>
+                            <input type="text" class="form-control re-width" list="job_list" placeholder="e.g. Laravel Developer">
+                            <datalist id="job_list">
+                                <option value="Front End Developer">
+                                    <option value="Back-End Developer">
+                                        <option value=" Accountancy and financialmanagemen">
+                                            <option value="IT & Telecommunication">
+                                                <option value="Laravel Developer">
+                            </datalist>
+                        </div>
+                        <!-- Company field-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size">Company/Industry Type</label>
+                            <input type="text" class="form-control re-width" list="Comapny-Type" placeholder="e.g. Software Company">
+                            <datalist id="Comapny-Type">
+                                <option value="Software Company">
+                                    <option value="Real estate industry.">
+                                        <option value="Agriculture industry">
+                                            <option value="IT & Telecommunication">
+                                                <option value="Laravel Developer">
+                            </datalist>
+                        </div>
+                        <!--  Vacancies field-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size">Number Of Vacancies</label>
+                            <input type="number" class="form-control re-width" placeholder="e.g. Software Company"> </div>
+                        <!--=========Biusness Description============-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size">Job Description</label>
+                            <textarea type="text" class="form-control des-width" name="desc" rows="5" placeholder="Buisness Description"></textarea>
+                        </div>
+                        <!--=========Job publish============-->
+                        <div id="field">
+                            <label class="re-ml f-size">Published on </label>
+                            <input type="date" class="form-control re-width" placeholder="e.g.12/06/18"> </div>
+                        <!-- age -->
+                        <div id="field">
+                            <label class="re-ml f-size">Your Age </label>
+                            <input type="number" class="form-control re-width" placeholder="e.g. 21 "> </div>
+                        <!--=========Job Requirments============-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size">Job Requirments</label>
+                            <input type="text" class="form-control re-width" name="Job-Requirments" tabindex="1" placeholder="Job Requirments"> <span><button type="button" class="add-more-button">Add More</button></span></div>
+                        <!--=========Job- Description============-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size">Job-Description</label>
+                            <input type="text" class="form-control re-width" name="Job-Description" tabindex="1" placeholder="Job Requirments"> <span><button type="button" class="add-more-button">Add More</button></span></div>
+                        <!--========= Educational Requirements============-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size f-size"> Educational Requirements</label>
+                            <input type="text" class="form-control re-width" name="alt-company" tabindex="1" placeholder="Job Requirments"> <span><button type="button" class="add-more-button">Add More</button></span></div>
+                        <!--=========  Other Benefits============-->
+                        <div id="field">
+                            <label for="name" class="re-ml f-size"> Other Benefits</label>
+                            <input type="text" class="form-control re-width" name="Educational" tabindex="1" placeholder="Job Requirments"> <span><button type="button" class="add-more-button">Add More</button></span></div>
+                        <div id="field">
+                            <!--=========   Job-Source============-->
+                            <label for="name" class="re-ml f-size"> Job-Source</label>
+                            <input type="text" class="form-control re-width" name="Job-Source" tabindex="1" placeholder="Job Requirments"> <span><button type="button" class="add-more-button">Add More</button></span></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="job-nature-wrapper">
+        <!-- Jobs By Experience -->
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="job-nature-widget">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h4 class="widget-title">Jobs Type</h4>
+                                <ul class="optionlist">
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="permanent">
+                                        <label for="permanent"></label> Full Time/Permanent</li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="contract">
+                                        <label for="contract"></label> Contract </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="parttime">
+                                        <label for="parttime"></label> Part Time </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="internship">
+                                        <label for="internship"></label> Internship</li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="freelance">
+                                        <label for="freelance"></label> Freelance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h4 class="widget-title">Salary Range</h4>
+                                <ul class="optionlist">
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="price1">
+                                        <label for="price1"></label> 0 to $100 </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="price2">
+                                        <label for="price2"></label> $100 to $199 </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="price3">
+                                        <label for="price3"></label> $199 to $499 </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="price4">
+                                        <label for="price4"></label> $499 to $999 </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="price5">
+                                        <label for="price5"></label> $999 to $4999 </li>
+                                    <li>
+                                        <input type="checkbox" name="checkname" id="price6">
+                                        <label for="price6"></label> Above $4999 </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h4 class="widget-title text-center">Exprience</h4>
+                                <ul class="optionlist">
+                                    <li>
+                                        <input type="radio" name="checkname" id="exp1">
+                                        <label for="exp1"></label> None </li>
+                                    <li>
+                                        <input type="radio" name="checkname" id="exp2">
+                                        <label for="exp2"></label> 1-2 Experience</li>
+                                    <li>
+                                        <input type="radio" name="checkname" id="exp3">
+                                        <label for="exp3"></label> 2-4 Experience</li>
+                                    <li>
+                                        <input type="radio" name="checkname" id="exp4">
+                                        <label for="exp4"></label> 4-6 Experience </li>
+                                    <li>
+                                        <input type="radio" name="checkname" id="exp5">
+                                        <label for="exp5"></label> 6-10 Experience </li>
+                                    <li>
+                                        <input type="radio" name="checkname" id="exp6">
+                                        <label for="exp6"></label> Above 10 </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="submit-button">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <button type="button" class="btn btn-client">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!--======FOOTER=====-->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="about-left">
+                        <h4>About Jobs Fider</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor faucibus arcu, semper pellentesque arcu condimentum non. Sed non volutpat diam. Proin tempus consectetur pretium. Nulla in neque gravida, porttitor lorem nec, consequat risus. Donec convallis sapien vitae metus gravida elementum. Donec euismod sapien risus, a interdum eros imperdiet sagittis.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-site-map footer-menu-list">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Careers with Us</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-site-map footer-menu-list">
+                        <h4>For Employers</h4>
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Job Boards</a></li>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#">Enterprises</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-site-map footer-menu-list">
+                        <h4>For Jobseekers</h4>
+                        <ul>
+                            <li><a href="#">Skill Test</a></li>
+                            <li><a href="#">Search Jobs</a></li>
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Browse Companies</a></li>
+                            <li><a href="#">Job Seeker Reviews</a></li>
+                            <li><a href="#">Create Free Account</a></li>
+                            <li><a href="#">Job Seeker Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-social-menu footer-menu-list">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> <span>Facebook</span></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> <span>Linkedin</span></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><span> Google Plus</span></a></li>
+                            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i><span> Google Plus</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

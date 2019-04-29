@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobs finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> </head>
+
+<body>
+    <!--===== top nav ====-->
+    <section class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ===== menu navbar ====-->
+    <section id="menu-navbar">
+        <div class="nav-bar">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#"><img src="image/../image/logo.png"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Tranning</a></li>
+                            <li><a href="#">Skill Test</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resource <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Career Guide</a></li>
+                                    <li><a href="#">Interview Tips</a></li>
+                                    <li><a href="#">Resume Tips</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">sign in</a></p>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-lg btlg-2" data-toggle="modal" data-target="#myModal"> create account</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    <!--menu navbar end-->
+    <!--  ======>Sign In id<=====-->
+    <section class="sign-in-id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" align="center"> <img class="img-circle" id="img_logo" src="image/logo.png" alt="image">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+                                </div>
+                                <!--  radio Button -->
+                                <div class="choice-login-18jan">
+                                    <label>
+                                        <input type="radio" name="gender" value="female"> Job Holder
+                                        <input type="radio" name="gender" value="other">Candidate </label>
+                                </div>
+                                <div id="div-forms">
+                                    <form id="login-form">
+                                        <div class="modal-body">
+                                            <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Login</button>
+                                            </div>
+                                            <div>
+                                                <button id="login_lost_btn" type="button" class="btn btn-link">Forget Password?</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="lost-form" style="display:none;">
+                                        <div class="modal-body">
+                                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required> </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Send</button>
+                                            </div>
+                                            <div>
+                                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======> create account option <=======-->
+    <section class="craeate-account-id">
+        <div class="container">
+            <div class="banner-inner text-center">
+                <div class="row">
+                    <!--  Craeate modal-->
+                    <div class="col-md-12">
+                        <div class="login-wrapper">
+                            <!-- Button trigger modal -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content model-content-feb5">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Create Your Account</h4> </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-secret" aria-hidden="true"></i>
+                                                        <h3>Job Seeker</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="registration.html">Create Account </a></h5> </div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                                        <h3>Job Holder</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="registration.html">Create Account </a></h5> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="candidate-header-bg">
+        <h2 class="text-center">Find Your favourite Candidate</h2> </div>
+    <!-- ======>SKILL CANDIDATE LIST<======-->
+    <section class="skill-candidate-list">
+        <div class="container">
+            <div class="candidate-pro7jan">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!--candidate profile-->
+                        <div class="skill-candidate-details text-center"> <img src="image/candidate-profile/CA-2.jpg" alt="">
+                            <a href="#">
+                                <p>Radwan Ahmed</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="candidate-details"> <img src="image/candidate-profile/RA-1.jpg" alt=""> </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="candidate-details"> <img src="image/candidate-profile/CA-3.jpg" alt=""> </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="candidate-details"> <img src="image/candidate-profile/CA-4.jpg" alt=""> </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="candidate-details"> <img src="image/candidate-profile/CA-5.jpg" alt=""> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====PAGINATION HTML======-->
+    <section class="pagination-7jan text-center">
+        <div class="container">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!--======FOOTER=====-->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="about-left">
+                        <h4>About Jobs Fider</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor faucibus arcu, semper pellentesque arcu condimentum non. Sed non volutpat diam. Proin tempus consectetur pretium. Nulla in neque gravida, porttitor lorem nec, consequat risus. Donec convallis sapien vitae metus gravida elementum. Donec euismod sapien risus, a interdum eros imperdiet sagittis.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-site-map footer-menu-list">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Careers with Us</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-site-map footer-menu-list">
+                        <h4>For Employers</h4>
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Job Boards</a></li>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#">Enterprises</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-site-map footer-menu-list">
+                        <h4>For Jobseekers</h4>
+                        <ul>
+                            <li><a href="#">Skill Test</a></li>
+                            <li><a href="#">Search Jobs</a></li>
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Browse Companies</a></li>
+                            <li><a href="#">Job Seeker Reviews</a></li>
+                            <li><a href="#">Create Free Account</a></li>
+                            <li><a href="#">Job Seeker Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Footer-social-menu footer-menu-list">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> <span>Facebook</span></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> <span>Linkedin</span></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><span> Google Plus</span></a></li>
+                            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i><span> Google Plus</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobs Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> </head>
+
+<body>
+    <!--===== top nav ====-->
+    <section class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ===== menu navbar ====-->
+    <section id="menu-navbar">
+        <div class="nav-bar">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#"><img src="image/../image/logo.png"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Skill Test</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resource <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Career Guide</a></li>
+                                    <li><a href="#">Interview Tips</a></li>
+                                    <li><a href="#">Resume Tips</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">sign in</a></p>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-lg btlg-2" data-toggle="modal" data-target="#myModal"> create account</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    <!--menu navbar end-->
+    <!--  ======>Sign In id<=====-->
+    <section class="sign-in-id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" align="center"> <img class="img-circle" id="img_logo" src="image/logo.png" alt="image">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+                                </div>
+                                <!--  radio Button -->
+                                <div class="choice-login-18jan">
+                                    <label>
+                                        <input type="radio" name="gender" value="female"> Job Holder
+                                        <input type="radio" name="gender" value="other">Candidate </label>
+                                </div>
+                                <div id="div-forms">
+                                    <form id="login-form">
+                                        <div class="modal-body">
+                                            <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Login</button>
+                                            </div>
+                                            <div>
+                                                <button id="login_lost_btn" type="button" class="btn btn-link">Forget Password?</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="lost-form" style="display:none;">
+                                        <div class="modal-body">
+                                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required> </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Send</button>
+                                            </div>
+                                            <div>
+                                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======> create account option <=======-->
+    <section class="craeate-account-id">
+        <div class="container">
+            <div class="banner-inner text-center">
+                <div class="row">
+                    <!--  Craeate modal-->
+                    <div class="col-md-12">
+                        <div class="login-wrapper">
+                            <!-- Button trigger modal -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content model-content-feb5">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Create Your Account</h4> </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-secret" aria-hidden="true"></i>
+                                                        <h3>Job Seeker</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="registration.html">Create Account </a></h5> </div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                                        <h3>Job Holder</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="registration.html">Create Account </a></h5> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill-test-part">
+        <div class="container">
+            <div class="skill-test-details">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="skill-test-desc">
+                            <h3>Jobs Finder</h3>
+                            <p>&raquo; You can take fifty of free skill tests on Jobs Finder that cover a range of topics from English to Economics to XML. You can take tests to demonstrate your skills to potential clients and make yourself more marketable. Take as many tests as you want—for maximum impact, you may want to take tests corresponding with the skills you want to present to potential clients and considering hiding those where you rank below average.</p>
+                            <p>All your public tests are listed on your profile. Click any of the test names in the list to view the test results in more detail, including how many candidate have taken the test, where this score ranks, and a breakdown of the test results by topic.</p>
+                            <a href="question-pattern.html">
+                                <button class="skill_test_btn btn btn-success" type="button" class="btn btn-link">Start Your Test</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="quiz-img"> <img src="image/quiz.jpg" alt="quiz" class="img-responsive"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

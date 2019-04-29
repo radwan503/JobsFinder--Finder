@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    outline: none;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #222;
+}
+
+.table,
+th,
+td {
+    border: 1px solid #ddd;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 12px;
+}
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #222;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+.edit-option {
+    margin-top: 34px;
+}
+
+
+/*=======button=======*/
+
+.save-button {
+    height: 40px;
+    width: 100px;
+    background-color: #16A085;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.edite-button {
+    height: 40px;
+    width: 100px;
+    background-color: #16A085;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+
+/*----------1.CV Header  Section-------------*/
+
+.cv-header {
+    background-color: #16A085;
+    padding: 130px;
+    margin-top: -20px;
+    background: url(../image/our-moto/our-motobg.jpeg)no-repeat 100% fixed;
+    background-size: cover;
+    position: center center;
+}
+
+
+/*============= CV CONTENT CSS START HERE=============*/
+
+
+/*-----------side Nav tabs----------*/
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #222;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    background-color: #16A085;
+    padding: 10px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: none;
+    border: 1px solid transparent;
+    border-bottom-color: transparent;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav-tabs i {
+    margin-right: 10px;
+}
+
+
+/*----------------  Horizontal Tab Menu FOr Poat Resume Part -----------*/
+
+.cv-body-bg {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 3px 3px #ddd;
+}
+
+.user-cv-7jan {
+    padding: 30px;
+}
+
+.cv-body-bg-another {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 3px 3px #ddd;
+}
+
+.cv-body-bg-another i {
+    margin-right: 8px;
+}
+
+.mian-body-cv {}
+
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+    color: #222;
+    margin-bottom: 35px;
+}
+
+#exTab2 h3 {
+    color: white;
+    background-color: #222;
+    padding: 5px 15px;
+}
+
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0;
+}
+
+#exTab3 .tab-content {
+    color: white;
+    background-color: #222;
+    padding: 5px 15px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #16A085;
+}
+
+
+/*==========Post Resume Section==========*/
+
+
+/*----------IMAGE---------*/
+
+.resume-image {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.resume-image img {
+    box-shadow: 0px opx 3px 5px #222;
+    border: 1px solid #222;
+}
+
+.resume-personal-image22feb {
+    background-color: #fff;
+    border: 1px solid #222;
+    margin-top: 30px;
+    width: 25%;
+}
+
+
+/*=====>uplaod-setion<======*/
+
+.uplaod-option {
+    display: block;
+    padding: 1em 2em;
+    color: #fff;
+    background: #222;
+    border-radius: none;
+    transition: background .3s;
+}
+
+.tab-pane h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.online-resume {
+    margin-top: 25px;
+}
+
+.online-resume a {
+    border-radius: 0px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #fff;
+    background-color: #16A085;
+    padding: 10px;
+    text-decoration: none;
+    transition: .6s;
+}
+
+.online-resume a:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 3px #222;
+    color: #222;
+    transition: .6s;
+}
+
+
+/*------------Video resume Section----------*/
+
+.video-title {
+    background-color: #16A085;
+    padding: 8px;
+    color: #fff;
+}
+
+.candidate_video_resume22feb {
+    margin-bottom: 30px;
+}
+
+
+/*============skill test result=======*/
+
+.progress {
+    width: 120px;
+    height: 120px;
+    line-height: 66px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border: 2px solid #ebebeb;
+    font-size: 32px;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 7.5%;
+    left: 7.5%;
+}
+
+.progress.blue .progress-bar {
+    border-color: #049dff;
+}
+
+.progress.blue .progress-value {
+    color: #049dff;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+    border-color: #fdba04;
+}
+
+.progress.yellow .progress-value {
+    color: #fdba04;
+}
+
+.progress.yellow .progress-left .progress-bar {
+    animation: loading-3 1s linear forwards 1.8s;
+}
+
+.progress.pink .progress-bar {
+    border-color: #ed687c;
+}
+
+.progress.pink .progress-value {
+    color: #ed687c;
+}
+
+.progress.pink .progress-left .progress-bar {
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.progress.green .progress-bar {
+    border-color: #1abc9c;
+}
+
+.progress.green .progress-value {
+    color: #1abc9c;
+}
+
+.progress.green .progress-left .progress-bar {
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*============Message Section=======*/
+
+.employer-invation {
+    background-color: white;
+}
+
+.employer-invation h3 {
+    background-color: #16A085;
+    padding: 10px;
+}
+
+.employer-invation p {
+    padding: 10px;
+}
+
+
+/*============employ-view=======*/
+
+.all-employee-view {
+    background-color: white;
+}
+
+.all-employee-view h3 {
+    background-color: #16A085;
+    padding: 10px;
+}
+
+.all-employee-view p {
+    padding: 10px;
+}
+
+
+/*============email-notification=======*/
+
+.email-notifi {
+    background-color: white;
+}
+
+.email-notifi h3 {
+    background-color: #16A085;
+    padding: 10px;
+}
+
+.email-notifi p {
+    padding: 10px;
+}
+
+.save-edit-22feb {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.edit-option ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #16A085;
+    border-color: #16A085;
+}
+
+
+/*==========sign out/ Name============*/
+
+.signout03 {
+    background-color: #16A085;
+}
+
+.marks-info {}
