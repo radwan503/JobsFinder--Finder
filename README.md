@@ -2,9 +2,10 @@
                                           #DAFFODIL INTERNATIONAL UNIVERSITY
                                           
                                           
-Objective
-Provide the information of new jobs.
-Reduce time & cost
+Objective-
+
+->Provide the information of new jobs.
+=>Reduce time & cost
 Easily find large amount of job.
 Search According their Skill.
 Search According their Location.
